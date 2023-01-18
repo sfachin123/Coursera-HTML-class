@@ -1,0 +1,90 @@
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.row {
+  width: 100%;
+}
+
+.page{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid black; 
+  background-color: #B3B6B7;     
+}
+#content{
+  margin-top: 50px;
+}
+.title{
+  float: right;
+  margin-top: 0;
+  left: 300px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.3em;
+  color: black;
+}
+#t1{
+  background-color: #F407CD;
+}
+#t2{
+  background-color: #E74C3C;
+}
+#t3{
+  background-color: #F9E79F;
+}
+p {  
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+}
+
+
+/**** Media Queries ****/
+.col-desktop, .col-tablet, .col-tablet2, .col-mobile{
+    float: left;
+    position: relative;
+ }
+
+/********** Desktop view **********/
+@media (min-width: 992px) {
+  .col-desktop {
+      width: 33.33%;
+  }
+}
+
+
+/********** Tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tablet{
+    width: 50%;
+  }
+  .col-tablet2{
+    width: 100%;
+  }  
+}
+
+/********** Mobile view **********/
+@media (max-width: 767px) {
+  .col-mobile {
+    width: 100%;
+  }  
+}
+
+</style>
